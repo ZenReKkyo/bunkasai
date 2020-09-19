@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+.top_page {
+    overflow: hidden;
+}
+body {
+    /*background-image: url("https://bunkasai.info/tkkm/2019/assets/image.jpg");
+    */
+    background-color: #888888;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.top_page header {
+    background-color: transparent;
+}
+.top_page .toggle span {
+    border-bottom-color: #FFF;
+}
+
+@media (min-width: 800px){
+    .top_page h6 {
+        font-size: 0.8vw;
+    }
+    .reiwafes {
+        position: absolute;
+        top: 2.5vw;
+        right: 28vw;
+    }
+    .count_down {
+    width: 100vw;
+    font-family: myfont;
+    font-size: 5vw;
+    text-align: center;
+    color:#FFF;
+    position: absolute;
+    top: 28vh;
+    z-index: 1;
+}
+    .count_down_timer {
+       font-size: 10vw; 
+    }
+    .count_down_sentence {
+        font-family: myfont;
+        font-size: 6vw;
+    }
+    .top_to_akatsuki {
+        height: 6vw;
+        position: absolute;
+        bottom: 10vw;
+        left: 12.5vw;
+    }
+    
+    .top_to_about {
+        height: 3vw;
+        position: absolute;
+        bottom: 5vw;
+        left: 12.5vw;
+    }
+    .top_main_design_icon {
+        width: 35vw;
+        position: absolute;
+        top: 18vh;
+        left: 32.5vw;
+        opacity: 0.65;
+    }
+    .banner {
+        width: 20vw;
+        margin: 0 auto;
+        font-size: 0;
+        position: absolute;
+        top: 30vw;
+        right: 10vw;
+    }
+    .banner li {
+        width: 8vw;
+        height: 5vw;
+        margin: 1vw;
+        text-align: center;
+        display: inline-block;
+        background: #FFF;
+    }
+    
+    .banner li a {
+        height: 5vw;
+        margin: auto;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5vw;
+        display: inline-block;
+        line-height: 1.5vw;
+    }
+}
+
+@media (max-width: 800px) { 
+     .count_down{
+        width: 100vw;
+        font-family: myfont;
+        font-size: 6vw;
+        text-align: center;
+        color:#FFF;
+        position: absolute;
+        top: 28vh;
+        z-index: 1;
+    }
+    .count_down_timer {
+        font-size: 14vw;
+    }
+    .count_down_sentence {
+        font-family: myfont;
+        font-size: 8vw;
+    }
+     .top_to_akatsuki {
+        width: 28vh;
+        position: absolute;
+        top: 60vh;
+        left: 10vw;
+    }
+    
+    .top_to_about {
+        width: 28vh;
+        position: absolute;
+        top: 70vh;
+        left: 10vw;
+    }
+    .top_main_design_icon {
+        position: absolute;
+        width: 50vw;
+        left: 25vw;
+        top: 20vh;
+        opacity: 0.65;
+    }
+    .banner {
+        width: 60vw;
+        margin: 0 auto;
+        font-size: 0;
+        position: absolute;
+        top: 80vw;
+        right: 20vw;
+    }
+    .banner li {
+        width: 20vw;
+        height: 10vw;
+        margin: 3vw;
+        text-align: center;
+        display: inline-block;
+        background: #FFF;
+    }
+    
+    .banner li a {
+        height: 10vw;
+        margin: auto;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5vw;
+        display: inline-block;
+        line-height: 1.5vw;
+    }
+}

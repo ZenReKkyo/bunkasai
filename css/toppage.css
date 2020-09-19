@@ -1,0 +1,60 @@
+.main-text1{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.main-text1 p{
+	display: inline-block;
+	border:2px solid #172;
+	background: #c75e6a;
+	word-break: break-all;
+	padding:20px;
+
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.main-menu{
+	list-style: none;
+}
+
+.main-menu li{
+	display: inline-block;
+	border:2px solid #e10;  
+	padding:8px;
+	margin:16px;
+}
+
+.countdown{
+	position: relative;
+	font-size: 4vw;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+}
+
+.countdown-text1{
+	font-size:2vw;
+}
+
+.countdown-text2{
+	font-size:15px;
+}
+
+.mid li{
+	display: inline-block;
+	list-style: none;
+}
+
+#main-logo{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	width: 300px;
+}
+.about-theme{
+	width:40%;
+}

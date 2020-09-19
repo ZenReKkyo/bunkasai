@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+@font-face {
+    font-family: myfont;
+    src: url(./myfont.ttf);
+}
+
+/*header*/
+header {
+    width: 100vw;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    z-index: 1000;
+}
+header.hide {
+    transform: translateY(-100%);
+}
+
+    /*headercontent*/
+    /*share*/
+    .icons {
+        list-style: none;
+        position: absolute;
+        z-index: 1000;
+        }
+
+    .global_nav {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255,255,255,0.8);
+        display: none;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+    }
+    .global_nav li{
+        font-family: a-otf-gothic-bbb-pr6n,sans-serif;
+        list-style: none;
+        position: relative;
+        transition: 0.4s;
+    }
+    .global_nav li:hover {
+        background: #FDE9D9;
+    }
+    .this_page {
+        background: #FDE9D9;
+    }
+
+/*maincontent*/
+main {
+    transition: 1s;
+}
+main.active {   
+    overflow: hidden;
+    filter: blur(20px);
+    transition: 1s;
+    z-index: 1;
+}
+
+/*footer*/
+#footer {
+    height: 80px;
+    width: 100vw;
+    background: #000;
+}
+#footer a {
+    color: #FFF;
+    margin-right: 3vw;
+    text-decoration: none;
+    position: relative;
+    top: 22.5px;
+    left: 15vw;
+}
+.west {
+    font-size: 25px;
+}
+.SNS {
+    border-bottom: solid 2px #FFF;
+}
+
+/*画面サイズが800pxよりも大きいとき*/
+@media (min-width: 800px){
+    /*font*/
+    h3 {
+        font-size: 2.1vw;
+        font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+        line-height: 4.2vw;  
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 1.6vw;
+        font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+        line-height: 3.2vw; 
+    }
+    h5 {
+        font-size: 1.2vw;
+        font-family: a-otf-gothic-bbb-pr6n,sans-serif;
+        font-weight: 100;
+        line-height: 2.4vw;
+    }
+    .page_title {
+        font-size: 25px;
+        font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+        font-weight: 600;
+        position: absolute;
+        top: 35px;
+        left: 12.5vw;
+        z-index: 1000;
+    }
+    
+    /*header*/
+    header {
+        height: 95px;
+    }
+    
+    /*headercontent*/
+        /*sharing*/
+        .icons {
+            top: 35px;
+            right: 12.5vw;
+            font-size: 0;
+        }
+        
+        .icons li {
+            padding-left: 20px;
+            position: relative;
+            float: left;
+        }
+    
+        .mainIcon,
+        #TwitterIcon,
+        #LINEIcon,
+        #firstreiwa {
+            height: 25px;
+        }
+        /*nav*/
+    .toggle {
+        width: 20px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .toggle span {
+        width: 20px;
+        border-bottom: solid 3px #000;
+        display: block;
+        position: absolute;
+    }    
+    .toggle span:nth-child(1) {
+        top: 4px;
+    }
+    .toggle span:nth-child(2) {
+        top: 11px;
+    }
+    .toggle span:nth-child(3) {
+        top: 18px;
+    }
+    .toggle span:nth-child(1).hover {
+        top: 2px;
+    }
+    .toggle span:nth-child(3).hover {
+        top: 20px;
+    }
+    .toggle.active span:nth-child(1) {
+        top: 12px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .toggle.active span:nth-child(2),
+    .toggle.active span:nth-child(3) {
+        top: 12px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 1000;
+    }
+        .global_nav li{
+            width: 30vw;
+            height: 7vh;
+            margin: 1.5vh 0;
+            font-size: 2vh;
+            left: 57.5vw;
+            top: 90px;
+        }
+        .global_nav li a {
+        width: 90%;
+        text-align: right;
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        }
+    
+    /*br*/
+    .br-pc {
+        display: inline-block;
+    }
+    .br-sp {
+        display: none;
+    }
+    
+    /*space*/
+    .space120_75 {
+    padding-bottom: 120px;
+    display: block;
+    }
+    .space60_36 {
+    padding-bottom: 60px;
+    display: block;
+    }
+}
+
+/*画面サイズが800pxよりも小さいとき*/
+@media (max-width: 800px) {
+    /*font*/
+    h3 {
+        font-size: 17px;
+        font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+        line-height: 34px;  
+    }
+    h4 {
+        font-size: 14.5px;
+        font-family: a-otf-midashi-go-mb31-pr6n, sans-serif; 
+        line-height: 29px;
+    }
+    h5 {
+        font-size: 13px;
+        font-family: a-otf-gothic-bbb-pr6n,sans-serif;
+        font-weight: 100;
+        line-height: 26px;
+    }
+    .page_title {
+        font-size: 18px;
+        font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+        letter-spacing: 0.5vw;
+        position:fixed;
+        top: 21px;
+        left: 10vw;
+        z-index: 1000;
+    }
+    
+    /*header*/
+    header {
+        height: 60px;
+    }
+    /*headercontent*/
+        /*sharing*/
+        .icons {
+        top: 20px;
+        right: 10vw;
+        font-size: 0;
+        }
+        
+        .icons li {
+            padding-left: 15px;
+            position: relative;
+            float: left;
+        }
+    
+        .mainIcon,
+        #TwitterIcon,
+        #LINEIcon,
+        #firstreiwa {
+            height: 20px;
+        }
+        /*nav*/
+    .toggle {
+        width: 16px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .toggle span {
+        width: 16px;
+        border-bottom: solid 3px #000;
+        display: block;
+        position: absolute;
+    }    
+    .toggle span:nth-child(1) {
+        top: 3.2px;
+    }
+    .toggle span:nth-child(2) {
+        top: 8.8px;
+    }
+    .toggle span:nth-child(3) {
+        top: 14.4px;
+    }
+    .toggle span:nth-child(1).hover {
+        top: 1.6px;
+    }
+    .toggle span:nth-child(3).hover {
+        top: 16px;
+    }
+    .toggle.active span:nth-child(1) {
+        top: 9.6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .toggle.active span:nth-child(2),
+    .toggle.active span:nth-child(3) {
+        top: 9.6px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 1000;
+    }
+        .global_nav li{
+        width: 50vw;
+        height: 6vh;
+        margin: 2vh 0;
+        font-size: 2vh;
+        border-left: solid 0.3vw #000;
+        border-right: solid 0.3vw #000;
+        top: 23vw;
+        left: 25vw;
+    }
+        .global_nav li a {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+    
+    /*br*/
+    .br-sp {
+        display: inline-block;
+    }
+    
+    /*space*/
+    .space120_75 {
+    padding-bottom: 75px;
+    display: block;
+    }
+    .space60_36 {
+    padding-bottom: 36px;
+    display: block;
+    }
+}
+
+.done {
+    color: #000;
+}
+.notyet {
+    color: #808080;
+}
+

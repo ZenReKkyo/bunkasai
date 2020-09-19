@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+/*あああ*/
+
+* {
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@font-face{
+    font-family: 'heisei-kaku-gothic-stdn,sans-serif';
+font-weight: 500;
+    font-style: normal;}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes TwitterUnderLine{
+    from{
+        border-bottom-color: transparent;
+    }
+    to{
+        border-bottom-color: #66CCFF;
+    }
+}
+
+@keyframes InstagramUnderLine{
+    from{
+        border-bottom-color: transparent;
+    }
+    to{
+        border-bottom-color: #CF2E92;
+    }
+}
+
+@keyframes LastYearUnderLine{
+    from{
+        border-bottom-color: transparent;
+    }
+    to{
+        border-bottom-color: #66cc66;
+    }
+}
+
+@keyframes changeSNS-link{
+    from{
+        background-color: transparent;
+    }
+    to{
+       background-color: #fff100;
+    }
+}
+
+body{
+    animation: FadeIn 1.5s linear;
+    background-color: #884898; 
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    overflow: hidden;
+ z-index: 1;
+    }
+           
+.article{
+    background: #fff;
+    padding: 3%;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    position: absolute;
+    transform:  translate(-50%,-50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+h1{
+     font-family: 'heisei-kaku-gothic-stdn';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+h2{
+     font-family: 'heisei-kaku-gothic-stdn';
+    font-weight: 400;
+    font-size: 24px;
+	line-height: 1.55;
+	color:red;
+}
+
+h3{
+     font-family: 'heisei-kaku-gothic-stdn';
+     font-weight: 400;
+    font-size: 20px;
+    line-height: 1.55;
+}
+
+h4{
+     font-family: 'heisei-kaku-gothic-stdn';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.55;
+}
+
+p{
+     font-family: 'heisei-kaku-gothic-stdn';
+     font-weight: 400;
+}
+
+a {
+    color: #808080;
+    text-decoration: none;
+}
+
+.spacer{
+    display: block;
+    padding-bottom: 1.5%;
+}
+
+.spacer-large{
+    display: block;
+}
+
+.br-tb {
+    display: none;
+}
+
+.br-sp {
+    display: none;
+}
+
+.Twitter{
+    text-decoration: none;
+    color: #808080;
+    border-bottom: 3px dashed;
+    border-color: transparent;
+}
+
+.Twitter:hover{
+    animation: TwitterUnderLine 0.2s linear forwards;
+}
+
+.Instagram{
+    text-decoration: none;
+    color: #808080;
+    border-bottom: 3px dashed;
+    border-color: transparent;
+}
+
+.Instagram:hover{
+    animation: InstagramUnderLine 0.2s linear forwards;
+}
+
+.LastYear{
+    text-decoration: none;
+    color: #808080;
+    border-bottom: 3px dashed;
+    border-color: transparent;
+}
+
+.LastYear:hover{
+    
+    animation: LastYearUnderLine 0.2s linear forwards;
+}
+
+.copyright {
+    color: #808080;
+}
+
+.SNS {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.SNS-link {
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.SNS-link a {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SNS-link:hover{
+    animation: changeSNS-link 1s linear forwards;
+}
+
+@media(min-width:600px) and (max-width:1350px) {
+    .article {
+        width: 85%;
+        padding: 2.5%;
+    }
+    h1 {
+        font-size: 2.7vw;
+    }
+    h2 {
+        font-size: 2.6vw;
+    }
+    h3 {
+        font-size: 2vw;
+    }
+    h4 {
+        font-size: 1.9vw;
+    }
+    p {
+        font-size: 1.9vw;
+    }
+    .SNS-link {
+        margin: 0.5vw;
+    }
+    .SNS-link a {
+        font-size: 3.5vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    .tile {
+        width: calc(100vw/6);
+        height: calc(100vw/6);
+    }
+}
+
+@media(max-width:599px) {
+    h1 {
+        font-size: 4.5vw;
+    }
+    h2 {
+        font-size: 3.5vw;
+    }
+    h3 {
+        font-size: 2.4vw;
+    }
+    h4 {
+        font-size: 2.3vw;
+    }
+    p {
+        font-size: 1.9vw;
+    }
+    .br-tb {
+        display: inline;
+    }
+    .br-sp {
+        display: inline;
+    }
+    .SNS-link {
+        margin: 1vw;
+    }
+    .SNS-link a {
+        font-size: 4vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    .tile {
+        width: 20vw;
+        height: 20vw;
+    }
+}
