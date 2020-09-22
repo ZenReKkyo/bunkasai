@@ -1,3 +1,13 @@
+.menu-item:nth-child(1)::after{
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 2.5px;
+	background-color: #a9d159;
+	transition: .4s;
+}
 .explain{
 	margin-left:4.5%;
 }
