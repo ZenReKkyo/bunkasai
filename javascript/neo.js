@@ -35,3 +35,10 @@ function CD(){
 	$(".countdown-sec").text(ss);
     setTimeout(CD, 1000);
 }
+
+$(function(){
+    $('.modular').on('click',function(){
+        $(this).toggleClass('modular-active');
+        $('.menu2-base').toggleClass('open-menu');
+    });
+});

@@ -1,5 +1,6 @@
 .main-text1{
 	position:relative;
+	text-align: center;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -10,10 +11,7 @@
 	background: #c75e6a;
 	word-break: break-all;
 	padding:20px;
-
-	
-	margin-left: auto;
-	margin-right: auto;
+	border-radius: 1em;
 	
 }
 
@@ -31,9 +29,8 @@
 .countdown{
 	position: relative;
 	font-size: 4vw;
-	margin-left:auto;
-	margin-right:auto;
 	margin-top:40px;
+	text-align: center;
 }
 
 .countdown-text1{
