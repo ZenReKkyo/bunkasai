@@ -7,43 +7,86 @@
 
 .main-text1 p{
 	display: inline-block;
-	border:2px solid #172;
-	background: #c75e6a;
+	border:2px solid #00bcd4;
+	background: #ff8a80;
 	word-break: break-all;
 	padding:20px;
 	border-radius: 1em;
 	
 }
-
-.main-menu{
-	list-style: none;
+#main-logo{
+	position: relative;
+	margin: 8vw 0;
+	width: 60%;
 }
-
-.main-menu li{
-	display: inline-block;
-	border:2px solid #e10;  
-	padding:8px;
-	margin:16px;
-}
-
 .countdown{
 	position: relative;
-	font-size: 4vw;
-	margin-top:40px;
+	margin:8vw 0;
 	text-align: center;
+	padding:1.5em;
+	border:dashed 3px #000;
+
+}
+.countdown-title{
+	position: absolute;
+	display: inline-block;
+	top: -11px;
+	left:33px;
+	padding:0 10px;
+	line-height: 1;
+	font-size: 2.5vw;
+	background:#f3f3f3;
+	
+}
+.countdown-text2{
+	font-size: 2vw;
+	font-family: din-2014, sans-serif;
+	padding: 0 1em;
 }
 
-.countdown-text1{
+#cdn{
+	letter-spacing: 2px;
+	font-family: din-2014, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 9vw;
+}
+/*
+.headline{
+	display:block;
+	text-align: center;
 	font-size:2vw;
 }
 
-.countdown-text2{
-	font-size:15px;
+.headline span{
+	display: inline-block;
+	position: relative;
+}
+.headline span::before,.headline span::after{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	background-color: #e86912;
+	width: 0.5vw;
+	height: 2vw;
+}
+.update{
+	margin:10vw 3vw;
+	position: relative;
+	text-align: center;
+	display: block;
+	background-color: salmon;
 }
 
-#main-logo{
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 40px;
-	width: 300px;
+.update li{
+	display: list-item;
 }
+
+.update li span{
+	display: inline-block;
+	padding:1vw 6vw;
+}
+.update li p{
+	display: inline-block;
+}
+*/

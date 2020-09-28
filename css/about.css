@@ -8,17 +8,25 @@
 	background-color: #a9d159;
 	transition: .4s;
 }
-.explain{
-	margin-left:4.5%;
-}
+
 .explain h1{	
+	position: relative;
 	text-align: center;
+	font-family: 'Noto Sans JP', sans-serif;
 }
+
 .explain h2{
-	display: inline;
+	position: relative;
+	display: inline-block;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+.explain h3{
+	font-family: 'Noto Sans JP', sans-serif;
 }
 .explain h4{
 	margin-bottom: 40px;
+	font-family: 'Noto Sans JP', sans-serif;
+	letter-spacing: 1px;
 }
 .explain-title{
 	list-style-position: inside;
@@ -26,5 +34,20 @@
 	list-style-image: url(../pic/cloud.svg);
 }
 .explain-title li{
-	padding:18px;
+	position: relative;
+	margin:18px 0;
+}
+.explain-title li::before{
+	content: '';
+	position: absolute;
+
+	background-image: linear-gradient(to right,#00838f,#00838f 5px,transparent 5px,transparent 14px);
+	background-size: 14px 3px;
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	left: 0;
+	bottom:-4px;
+	display: inline-block;
+	width:85%;
+	height:3px;
 }
