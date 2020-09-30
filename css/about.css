@@ -1,6 +1,6 @@
-.menu-item:nth-child(1)::after{
+.menu-item:nth-child(1)::before{
 	position: absolute;
-	bottom: -2px;
+	bottom: -4px;
 	left: 0;
 	content: '';
 	width: 100%;
