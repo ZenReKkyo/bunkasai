@@ -39,6 +39,6 @@ function CD(){
 $(function(){
     $('.modular').on('click',function(){
         $(this).toggleClass('modular-active');
-        $('.menu2-base').toggleClass('open-menu');
+        $('.menu2-base').toggleClass('open-menu2-base');
     });
 });

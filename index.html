@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <meta charset="utf-8"/>
 
 <head>
 	<title>第69回筑駒文化祭公式サイト</title>
-    <meta name="description" content="2020年筑駒文化祭《彩雲》は10月3日(金)～11月1日(日)に開催予定です。">
+    <meta name="description" content="2020年筑駒文化祭《彩雲》は10月30日(金)～11月1日(日)に開催予定です。">
     <meta name="keywords" content="文化祭,筑駒,駒場,筑波,高校,中学,中学校,高等学校,つくこま,ぶんかさい">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#ffffff">
-	
-	
+
 	<!--Font
 	<script>
 		(function(d) {
@@ -53,7 +52,7 @@
 	<!--共有-->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="第69回筑駒文化祭公式サイト">
-	<meta property="og:image" content="pic/all_logo2">
+	<meta property="og:image" content="pic/all_logo2.png">
     <meta property="og:url" content="http://bunkasai.info/tkkm/2620/index.html">
     <meta property="twitter:title" content="第69回筑駒文化祭公式サイト">
     <meta name="twitter:card" content="summary_large_image">
@@ -78,32 +77,60 @@
 
 <body>
 	<header>
-		<a href="index.html"><img src="pic/all_logo.svg" id="header-logo"></a>
-
-		<ul class="header-menu">
-			<li class="menu-item"><a href="about.html">概要・ご案内</a></li>
-			<li class="menu-item"><span>団体紹介+オンライン文化祭</span></li>	
-			<li class="menu-item"><span>タイムテーブル</span></li>
-			<li class="menu-item"><span>ダウンロード</span></li>	
+		<div class="menu1">
+		<a href="index.html">
+			<img src="pic/all_logo.svg" id="header-logo">
+		</a>
+	
+		<ul class="header-menu1">
+			<li class="menu1-item"><a href="index.html">TOP</a></li>
+			<li class="menu1-item"><a href="about.html">概要・ご案内</a></li>
+			<li class="menu1-item"><span>団体紹介</span></li>	
+			<li class="menu1-item"><span>タイムテーブル</span></li>
+			<li class="menu1-item"><span>ダウンロード</span></li>	
 		</ul>
-
+		<footer class="snss">
+			<a href="https://twitter.com/intent/tweet?url=https://bunkasai.info/tkkm/2620/index&hashtags=筑駒文化祭2020&via=tsukukomafes" 
+			target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+			<img class="sns-item" src="pic/twitter.svg">
+			</a>
+			<a href="https://www.instagram.com/tsukukomafes/">
+			<img class="sns-item" src="pic/instagram.svg">
+			</a>
+		</footer>
+		</div>
+		<div class="menu2">
 		<div class="modular">
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-
 		<div class="menu2-base">
-			<nav class="menu2">
-				<li class="menu-item2"><a href="index.html">TOP</a></li>
-				<li class="menu-item2"><a href="about.html">概要・ご案内</a></li>
-				<li class="menu-item2"><span>団体紹介+オンライン文化祭</span></li>	
-				<li class="menu-item2"><span>タイムテーブル</span></li>
-				<li class="menu-item2"><span>ダウンロード</span></li>	
+			<nav class="header-menu2">
+				<li class="menu2-item"><a href="index.html">TOP</a></li>
+				<li class="menu2-item"><a href="about.html">概要・ご案内</a></li>
+				<li class="menu2-item"><span>団体紹介+オンライン文化祭</span></li>	
+				<li class="menu2-item"><span>タイムテーブル</span></li>
+				<li class="menu2-item"><span>ダウンロード</span></li>	
 			</nav>
+			<footer class="snss">
+				<a href="https://twitter.com/intent/tweet?url=https://bunkasai.info/tkkm/2620/index&hashtags=筑駒文化祭2020&via=tsukukomafes" 
+				target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+				<img class="sns-item" src="pic/twitter.svg">
+				</a>
+				<a href="https://www.instagram.com/tsukukomafes/">
+				<img class="sns-item" src="pic/instagram.svg">
+				</a>
+			</footer>
+		</div>
 		</div>
 	</header>
 
+	<!--
+	<div class="loader">
+		<div class="loader-animation"></div>
+	</div>
+	-->
 	<main>
 		<div class="main-text1">
 			<p>
@@ -145,19 +172,11 @@
 			</ul>
 		</div>
 	-->
-	<ul class="snss">
-		<li>
-			<a href="https://twitter.com/intent/tweet?url=https://bunkasai.info/tkkm/2620/index/tweet?hashtags=筑駒文化祭2020&via=tsukukomafes" target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
-			<img class="sns-item" src="pic/twitter.svg">
-			</a>
-		</li>
-	</ul>
-
 
 	</main>
 
-
 	<script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="javascript/neo.js"></script>
+	<script type="text/javascript" src="javascript/template.js"></script>
 
 </body>
