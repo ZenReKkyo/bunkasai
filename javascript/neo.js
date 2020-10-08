@@ -42,3 +42,13 @@ $(function(){
         $('.menu2-base').toggleClass('open-menu2-base');
     });
 });
+
+$(function(){
+	var loader = $('.loader-base');
+    $(window).on('load',function(){
+		loader.fadeOut();
+	});
+	setTimeout(function(){
+		loader.fadeOut();
+	},2500);
+});

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
-<meta charset="utf-8" />
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8"/>
 
 <head>
 	<title>第69回筑駒文化祭公式サイト</title>
-    <meta name="description" content="2020年筑駒文化祭《彩雲》は10月3日(金)～11月1日(日)に開催予定です。">
+    <meta name="description" content="2020年筑駒文化祭《彩雲》は10月30日(金)～11月1日(日)に開催予定です。">
     <meta name="keywords" content="文化祭,筑駒,駒場,筑波,高校,中学,中学校,高等学校,つくこま,ぶんかさい">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#ffffff">
-	
-	
+
 	<!--Font
 	<script>
 		(function(d) {
@@ -44,7 +43,7 @@
 	<!--Favicon-->
 
 	<link rel="shortcut icon" href="pic/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/fav.svg">
     <link rel="manifest" href="pic/fav.png">
     <link rel="mask-icon" href="pic/fav.svg" color="#fff100">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -52,11 +51,18 @@
 
 	<!--共有-->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="第68回筑駒文化祭公式サイト">
+	<meta property="og:title" content="第69回筑駒文化祭公式サイト">
+	<meta property="og:image" content="pic/all_logo2.png">
+    <meta property="og:url" content="http://bunkasai.info/tkkm/2620/index.html">
+    <meta property="twitter:title" content="第69回筑駒文化祭公式サイト">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tsukukomafes">
+    <meta name="twitter:description" content="第69回筑駒文化祭《彩雲》は2020年10月30日(金)〜 オンラインで開催予定です。">
+    
 	 <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
-	 <link href="css/about.css" rel="stylesheet" type="text/css"/>
-     <link href="css/all.css" rel="stylesheet" type="text/css"/>
-     
+	 <link href="css/groups.css" rel="stylesheet" type="text/css"/>
+	 <link href="css/all.css" rel="stylesheet" type="text/css"/>
+	 <link href="css/loading.css" rel="stylesheet" type="text/css"/>
 	 <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
 </head>
 
@@ -71,7 +77,6 @@
 </script>
 
 <body>
-	
 	<header>
 		<div class="menu1">
 		<a href="index.html">
@@ -121,46 +126,36 @@
 		</div>
 		</div>
 	</header>
+
 	<div class="loader-base">
 		<div class="loader"></div>
 	</div>
-    <main>
-        <div class="explain">
-			<h1>概要</h1>
-			
-		<ul class="explain-title">
-			<li><h2>筑駒文化祭とは？</h2></li>
+	
+	<main>
+		<h1>団体紹介</h1>
+		<table class="deco-list1">
+			<tr class="deco-item">
+				<th><img class="deco-icon" src="decoicon/icon_2018_1-1.svg"></th>
+				<td>高校1-1HR</td>
+				<td>タイトル1</td>
+			</tr>
+			<tr class="deco-item">
+				<th><img class="deco-icon" src="decoicon/icon_2018_1-2.svg"></th>
+				<td>2HR</td>
+				<td>タイトル2000</td>
+			</tr>
+			<tr class="deco-item">
+				<th><img class="deco-icon" src="decoicon/icon_2018_1-3.svg"></th>
+				<td>高校1-3333333333HR</td>
+				<td>タイトル1333333333333</td>
+			</tr>
+		</table>
+	</main>
 
-            <h4>
-			筑駒文化祭は、年に一度開催される筑波大学附属駒場中・高等学校の文化祭です。<br>
-            文化祭実行委員会や高校3年生をはじめとし、生徒が一丸となって企画・運営をします。<br>
-			昨年度は15000人以上の方にご来場いただきました。
-			</h4>
-			
-			<li><h2>テーマ「彩雲」とは？</h2></li>
-
-			<h4>
-				彩雲とは、雲が日光によって美しく色づく現象のことです。<br>
-				日本では古くから吉兆として知られてきました。
-			</h4>
-
-        	<li><h2>開催概要</h2></li>
-
-			<h4>
-				今年は内部生のみで文化祭を行います。<br>
-				実地での文化祭は一般公開致しませんので、ご注意ください。<br>
-				また、オンラインでのコンテンツ公開が同時に行われます。<br>
-				<br>
-			</h4>
-
-			<h3>
-				公開日時 : 2020年10月30日 (金) ～11月上旬 (予定)
-			</h3>
-		</ul>
-			</div>
-
-    </main>
-    <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="javascript/neo.js"></script>
+	<script type="text/javascript" src="javascript/template.js"></script>
 
 </body>
+
+</html>

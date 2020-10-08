@@ -62,6 +62,7 @@
 	 <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
 	 <link href="css/toppage.css" rel="stylesheet" type="text/css"/>
 	 <link href="css/all.css" rel="stylesheet" type="text/css"/>
+	 <link href="css/loading.css" rel="stylesheet" type="text/css"/>
 	 <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
 </head>
 
@@ -126,11 +127,10 @@
 		</div>
 	</header>
 
-	<!--
-	<div class="loader">
-		<div class="loader-animation"></div>
+	<div class="loader-base">
+		<div class="loader"></div>
 	</div>
-	-->
+	
 	<main>
 		<div class="main-text1">
 			<p>
@@ -143,21 +143,23 @@
 			<img src="pic/all_logo3.svg" id="main-logo">
 		</div>
 
-		<div class="countdown">
-			<!--
-			<div class="countdown-text1">筑駒文化祭まで</div>-->
-			<span class="countdown-title">Countdown</span>
-			<span class="countdown-day" id="cdn"></span>
-			<span class="countdown-text2">日</span>
-			<span class="countdown-hour" id="cdn"></span>
-			<span class="countdown-text2">時間</span>
-			<span class="countdown-min" id="cdn"></span>
-			<span class="countdown-text2">分</span>
-			<span class="countdown-sec" id="cdn"></span>
-			<span class="countdown-text2">秒</span>
+		
+		<div class="countdown-base">
+			<div class="countdown">
+				<span class="countdown-title">Countdown</span>
+				<span class="countdown-day" id="cdn"></span>
+				<span class="countdown-text2">日</span>
+				<span class="countdown-hour" id="cdn"></span>
+				<span class="countdown-text2">時間</span>
+				<span class="countdown-min" id="cdn"></span>
+				<span class="countdown-text2">分</span>
+				<span class="countdown-sec" id="cdn"></span>
+				<span class="countdown-text2">秒</span>
+			</div>
 		</div>
+	
 <!--
-	実装ぜんぜんわからん　あとで
+	ボツ
 		<div class="update">
 			<h3 class="headline"><span>新着情報</span></h3>
 			<ul>
@@ -180,3 +182,5 @@
 	<script type="text/javascript" src="javascript/template.js"></script>
 
 </body>
+
+</html>
