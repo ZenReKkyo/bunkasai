@@ -8,13 +8,49 @@ h1{
 }
 .deco-list1{ 
 	table-layout: fixed;
-	width: 100%;
-	border-collapse: collapse;
-	border: 3px solid purple;
+	width: 90%;
 }
-.deco-item{
-	
+
+th,td{
+	padding:1vw 0;
+	background-color: greenyellow;
+}
+th{
+	width:12vw;
+}
+td{
+	font-size: 2vw;
 }
 .deco-icon{
-	width:5vw;
+	height:5vw;
+	max-height: 90px;
+}
+
+.popup-base{
+	background-color: #000000;
+	opacity:0.9;
+	width:100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	display:none;
+	z-index: 7;
+}
+
+.popup{
+	background-color: #fff;
+	position: absolute;
+	width:70%;
+	height:40%;
+	display:none;
+	z-index:8;
+
+	top:50%;
+	right:50%;
+	transform:translate(50%,-50%);
+}
+
+.popup-icon{
+	width:20%;
 }

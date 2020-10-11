@@ -44,6 +44,18 @@ $(function(){
 });
 
 $(function(){
+    $('.deco-item').on('click',function(){   
+        $('.popup-base,.popup').fadeIn(300);
+    });
+});
+$(function(){
+    $('.popup-base').on('click',function(){
+        $(this).fadeOut(300);
+        $('.popup').fadeOut(300);
+    });
+});
+
+$(function(){
 	var loader = $('.loader-base');
     $(window).on('load',function(){
 		loader.fadeOut();

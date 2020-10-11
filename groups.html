@@ -9,35 +9,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#ffffff">
-
-	<!--Font
-	<script>
-		(function(d) {
-		var config = {
-			kitId: 'cvs3veg',
-			scriptTimeout: 3000,
-			async: true
-		},
-		h=d.documentElement,
-		t=setTimeout(function(){
-			h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";
-		},config.scriptTimeout),
-		tk=d.createElement("script"),
-		f=false,
-		s=d.getElementsByTagName("script")[0],a;
-		h.className+=" wf-loading";
-		tk.src='https://use.typekit.net/'+config.kitId+'.js';
-		tk.async=true;
-		tk.onload=tk.onreadystatechange=function(){
-			a=this.readyState;
-			if(f||a&&a!="complete"&&a!="loaded")return;
-			f=true;
-			clearTimeout(t);
-			try{Typekit.load(config)}catch(e){}};
-			s.parentNode.insertBefore(tk,s)
-		})(document);
-		</script>
--->
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/jpp5ykk.css">
 	<!--Favicon-->
@@ -63,6 +34,7 @@
 	 <link href="css/groups.css" rel="stylesheet" type="text/css"/>
 	 <link href="css/all.css" rel="stylesheet" type="text/css"/>
 	 <link href="css/loading.css" rel="stylesheet" type="text/css"/>
+	 <link href="css/iziModal.css" rel="stylesheet" type="text/css"/>
 	 <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
 </head>
 
@@ -136,26 +108,32 @@
 		<table class="deco-list1">
 			<tr class="deco-item">
 				<th><img class="deco-icon" src="decoicon/icon_2018_1-1.svg"></th>
-				<td>高校1-1HR</td>
-				<td>タイトル1</td>
+				<td class="deco-main">高校1-1HR</td>
+				<td class="deco-main">タイトル1</td>
 			</tr>
 			<tr class="deco-item">
 				<th><img class="deco-icon" src="decoicon/icon_2018_1-2.svg"></th>
-				<td>2HR</td>
-				<td>タイトル2000</td>
+				<td class="deco-main">2HR</td>
+				<td class="deco-main">タイトル2000</td>
 			</tr>
 			<tr class="deco-item">
 				<th><img class="deco-icon" src="decoicon/icon_2018_1-3.svg"></th>
-				<td>高校1-3333333333HR</td>
-				<td>タイトル1333333333333</td>
+				<td class="deco-main">高校1-3333333333HR</td>
+				<td class="deco-main">タイトル1333333333333</td>
 			</tr>
 		</table>
+		<div class="popup-base"></div>
+		<div class="popup">
+			<img class="popup-icon" src="decoicon/icon_2018_1-1.svg">
+			<p class="popup-text">説明欄</p>
+		</div>
+
 	</main>
 
 	<script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="javascript/neo.js"></script>
 	<script type="text/javascript" src="javascript/template.js"></script>
-
+	<script type="text/javascript" src="javascript/iziModal.js"></script>
 </body>
 
 </html>

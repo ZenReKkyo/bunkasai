@@ -264,7 +264,6 @@ header{
 }
 
 main{
-	z-index: -1;
 	position: relative;
 	padding:3vw;
 	margin-left:auto;
