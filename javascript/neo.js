@@ -43,15 +43,36 @@ $(function(){
     });
 });
 
+var nowid,nowid_str;
+let decoicon=[
+	"decoicon/icon_2018_1-1.svg",
+	"decoicon/icon_2018_1-2.svg",
+	"decoicon/icon_2018_1-3.svg"
+];
+let decotext=[
+	"T1<br>T2",
+	"おはよう",
+	"T1<br>T2<br>T3<br>T4"
+];
 $(function(){
     $('.deco-item').on('click',function(){   
-        $('.popup-base,.popup').fadeIn(300);
+		$('.popup-base,.popup').fadeIn(300);
+		nowid_str=$(this).attr("id");
+		nowid_str=nowid_str.slice(1);
+		nowid=Number(nowid_str);
+		$(".popup").append('<img class="popup-icon">');
+		$(".popup").append('<div class="popup-text"></div>');
+		$(".popup-icon").attr("src",decoicon[nowid]);
+		$(".popup-text").append('<p>'+decotext[nowid]+'</p>');
     });
 });
+
 $(function(){
     $('.popup-base').on('click',function(){
         $(this).fadeOut(300);
-        $('.popup').fadeOut(300);
+		$('.popup').fadeOut(300);
+		$(".popup-icon").remove();
+		$(".popup-text").remove();
     });
 });
 

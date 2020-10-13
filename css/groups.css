@@ -14,16 +14,18 @@ h1{
 th,td{
 	padding:1vw 0;
 	background-color: greenyellow;
+	height:5vw;
+	max-height:90px;
 }
 th{
-	width:12vw;
+	width:10vw;
 }
 td{
 	font-size: 2vw;
 }
 .deco-icon{
 	height:5vw;
-	max-height: 90px;
+	max-height: 70px;
 }
 
 .popup-base{
